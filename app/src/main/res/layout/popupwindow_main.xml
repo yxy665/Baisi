@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/popupwindow_textview"
+        android:text="让精彩填满生活！"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="#00000000"
+        android:layout_gravity="top"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/popupwindow_gridview"
+            android:layoutAnimation="@anim/navagation_gridview_anim"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridView>
+
+
+
+    <TextView
+        android:id="@+id/popupwindow_cancel"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</FrameLayout>

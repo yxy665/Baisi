@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_recommend_subscribe"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/img_recommend_subscribe"
+        android:layout_below="@+id/view_recommend_subscribe"
+        android:src="@drawable/dingyue_gaoxiao"
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/view_recommend_subscribe"
+        android:id="@+id/linear_text"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_recommend_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_recommend"
+            android:text="搞笑"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/num_subscribe_recommend"
+                android:text="315.6万订阅"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#adadad"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:text="总贴数"
+                android:paddingRight="5dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/num_recommend_essence"
+                android:text="10753395"
+                android:textSize="12sp"
+                android:textColor="#ff2d55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="+订阅"
+        android:textSize="15sp"
+        android:textColor="#ff2d55"
+        android:background="#fdfdfd"
+        android:layout_width="60dp"
+        android:layout_height="20dp" />
+
+</RelativeLayout>

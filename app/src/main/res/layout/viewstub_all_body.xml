@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/player_list_video_all"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <demo.yang.com.baisi.Widget.MultiImageView
+        android:id="@+id/multiImagView_all"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+    </demo.yang.com.baisi.Widget.MultiImageView>
+
+    <TextView
+        android:id="@+id/textview_quantu_all"
+        android:text="点击查看全图"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:background="#7f000000"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

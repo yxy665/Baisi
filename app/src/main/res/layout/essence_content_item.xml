@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <demo.yang.com.baisi.Widget.CircleImageView
+            android:id="@+id/essence_content_img_head"
+            android:src="@drawable/img_user_photo"
+            android:paddingRight="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/essence_content_user_name"
+                android:text="逸小杨"
+                android:textColor="#8290DF"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/essence_content_create_time"
+                android:text="2017-03-16 17:56"
+                android:textSize="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <demo.yang.com.baisi.Widget.ExpandTextView
+        android:id="@+id/essence_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:showLines="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 不同的地方 -->
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/essence_content_love"
+                android:src="@drawable/essence_love"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/essence_content_num_love"
+                android:text="666"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/essence_content_hate"
+                android:src="@drawable/essence_hate"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/essence_content_num_hate"
+                android:text="666"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/essence_content_share"
+                android:src="@drawable/essence_share"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/essence_content_num_share"
+                android:text="666"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/essence_content_comment"
+                android:src="@drawable/essence_comment"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/essence_content_num_comment"
+                android:text="666"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#e7e7e7"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>
